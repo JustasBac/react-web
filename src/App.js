@@ -1,13 +1,31 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion"
 
 import Home from './components/pages/Home'
 import Services from './components/pages/Services'
 import Products from './components/pages/Products'
+import Destinations from './components/pages/Destination'
 import SignUp from './components/pages/SignUp'
 
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <AnimatePresence exitBeforeEnter>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/services' component={Services} />
+          <Route path='/products' component={Products} />
+          <Route path='/destinations' component={Destinations} />
+          <Route path='/sign-up' component={SignUp} />
+        </Switch>
+      </AnimatePresence>
+    </>
+  );
+}
 
 export const pageVariants = {
   initial: {
@@ -31,27 +49,6 @@ export const pageTransitions = {
   // duration: 0.5,
   type: "spring",
   stiffness: 50
-}
-
-function App() {
-  return (
-    <>
-      <Router>
-        <Navbar />
-        <AnimatePresence exitBeforeEnter>
-          <Switch >
-            <Route path='/' exact component={Home} />
-            <Route path='/services' exact component={Services} />
-            <Route path='/products' exact component={Products} />
-            <Route path='/sign-up' exact component={SignUp} />
-          </Switch>
-        </AnimatePresence>
-
-      </Router>
-
-
-    </>
-  );
 }
 
 export default App;

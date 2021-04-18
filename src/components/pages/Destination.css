@@ -1,0 +1,14 @@
+.page-destinations {
+    border: solid;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background: green;
+}
+
+.page-destinations img {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    border: solid red;
+}

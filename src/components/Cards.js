@@ -15,8 +15,16 @@ function Cards() {
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
-                        <CardItem src={picture1} text="Explore the hidden waterfall deep inside the Amazon jungle" label='Adventure' path='/services' />
-                        <CardItem src={picture2} text="Travel through the Islands of Bali in a Private Cruise" label='Luxury' path='/services' />
+                        <CardItem src={picture1}
+                            lokacija="Lithuania"
+                            text="Discover the colours you never knew existed"
+                            label='Sightseeing & Nature' path='/services'
+                            price="500"
+                            // test="not required"
+                            isolation="7 days"
+                            path="/destinations"
+                        />
+                        <CardItem src={picture2} lokacija="Bali" text="Travel through the Islands of Bali in a Private Cruise" label='Luxury' path='/destinations' />
                     </ul>
                     <ul className="cards__items">
                         <CardItem src={picture3} text="Explore the hidden waterfall deep inside the Amazon jungle" label='Adventure' path='/services' />
