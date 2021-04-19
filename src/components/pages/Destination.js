@@ -3,18 +3,38 @@ import { motion } from 'framer-motion'
 import { pageVariants, pageTransitions } from '../../App.js'
 import { Button } from '../Button'
 import './Destination.css'
+import euLogo from '../../images/re-open.jpg'
+import { Link } from 'react-router-dom'
 
 
 export default function Destinations(props) {
+    console.log("sitas..:", props.location.state.linkutis)
     if (props.location.state) {
         return (
             <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransitions}>
                 <div className="page-destinations">
-                    <h1 className='destinations'>{props.location.state.lokacija}</h1>
+                    <img className='bakraundas' src={props.location.state.src} alt="" />
+                    <h1>{props.location.state.lokacija}</h1>
+                    <div className="page-lentele">
+                        <img src={euLogo} alt="" />
+                        <h2>{props.location.state.text}</h2>
+                        <p>One person approximately spends {props.location.state.price}€ when travelling for one week</p>
+                        <h3>Corona travelling restrictions</h3>
+                        <div className="restrictions">
+                            <p>
+                                Is corona test required? {props.location.state.test ? <span className="required">{props.location.state.test}</span> : <span>Not required</span>}
+                            </p>
+                            <p>
+                                Do I have to self-isolate after arriving? {props.location.state.isolation ? <span className="required">Yes, {props.location.state.isolation}</span> : <span>Not required</span>}
+                            </p>
+                        </div>
+                        <p className='lorem'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quis excepturi exercitationem eveniet sed deserunt ducimus tempore tenetur nihil officiis mollitia, veritatis iure consequuntur fugit est earum, ex consequatur omnis?</p>
+                        <div className="mygtukai">
+                            <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>BACK <i class="fas fa-arrow-left"></i></Button>
+                            <Button linkTo={props.location.state.linkutis} className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>MORE <i class="fas fa-info-circle"></i></Button>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </motion.div >
         )
     } else {

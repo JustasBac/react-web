@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar'
 import { Route, Switch } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence } from "framer-motion"
 
 import Home from './components/pages/Home'
 import Services from './components/pages/Services'

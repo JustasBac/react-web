@@ -1,14 +1,87 @@
 .page-destinations {
-    border: solid;
-    display: flex;
-    width: 100%;
-    height: 80vh;
-    background: green;
+  position: relative;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.page-destinations img {
-    display: flex;
-    width: 100%;
-    height: 80vh;
-    border: solid red;
+.page-destinations img.bakraundas {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 92vh;
+  max-height: 92vh;
 }
+
+.page-destinations h1 {
+  font-size: 9em;
+  text-shadow: rgba(0, 0, 0, 0.6) 1px 0 10px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.page-destinations .page-lentele {
+  position: absolute;
+  top: 32%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35em;
+  border-radius: 0.6em;
+  background: #242424cc;
+}
+
+.page-destinations .page-lentele h2 {
+  margin: 0.6em 1em;
+}
+
+.page-destinations .page-lentele h3 {
+  margin: 2em 0 0.5em;
+}
+
+.page-destinations .page-lentele .restrictions {
+  margin: 1em 2em;
+  text-align: start;
+}
+
+.page-destinations .page-lentele .restrictions p {
+  margin: 0.5em 0;
+}
+
+.page-destinations .page-lentele p.lorem {
+  margin: 1.8em 1.6em;
+  line-height: 1.3em;
+}
+
+.page-destinations .page-lentele span {
+  color: lightgreen;
+}
+
+.page-destinations .page-lentele span.required {
+  color: lightcoral;
+}
+
+.page-destinations .page-lentele img {
+  margin-top: 1em;
+}
+
+.page-destinations .page-lentele .mygtukai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 7em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=Destination.css.map */

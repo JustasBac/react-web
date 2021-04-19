@@ -20,14 +20,29 @@ function Cards() {
                             text="Discover the colours you never knew existed"
                             label='Sightseeing & Nature' path='/services'
                             price="500"
-                            // test="not required"
+                            test="prior arrival"
                             isolation="7 days"
                             path="/destinations"
+                            linkutis="https://reopen.europa.eu/en/map/LTU/5006"
                         />
-                        <CardItem src={picture2} lokacija="Bali" text="Travel through the Islands of Bali in a Private Cruise" label='Luxury' path='/destinations' />
+                        <CardItem src={picture2}
+                            lokacija="Mallorca"
+                            text="Travel to the most sunny island in Spain!"
+                            price="600"
+                            label='Relax & Explore'
+                            path='/destinations'
+                            linkutis="https://reopen.europa.eu/en/map/ESP/5006"
+                        />
                     </ul>
                     <ul className="cards__items">
-                        <CardItem src={picture3} text="Explore the hidden waterfall deep inside the Amazon jungle" label='Adventure' path='/services' />
+                        <CardItem src={picture3} lokacija="Sweden"
+                            text="Celebrate swedish Midsummer"
+                            label='Sightseeing & Nature'
+                            price="800"
+                            test="prior arrival"
+                            path="/destinations"
+                            linkutis="https://reopen.europa.eu/en/map/SWE/5006"
+                        />
                         <CardItem src={picture4} text="Travel through the Islands of Bali in a Private Cruise" label='Luxury' path='/services' />
                         <CardItem src={picture5} text="Travel through the Islands of Bali in a Private Cruise" label='Luxury' path='/services' />
                     </ul>
