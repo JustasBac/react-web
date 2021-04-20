@@ -10,8 +10,14 @@ function Hero() {
             <h1>TRAVELLING IN EUROPE</h1>
             <p>Where can you go during the pandemic?</p>
             <div className="hero-btns">
-                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>SUGGESTED</Button>
+                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>SUGGESTED
+                </Button>
                 <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>BEST DEALS <i className="fas fa-suitcase-rolling"></i> </Button>
+            </div>
+            <div className="rodykle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     )

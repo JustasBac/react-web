@@ -17,8 +17,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-height: 92vh;
-  max-height: 92vh;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .page-destinations h1 {

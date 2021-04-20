@@ -30,8 +30,12 @@ export default function Destinations(props) {
                         </div>
                         <p className='lorem'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quis excepturi exercitationem eveniet sed deserunt ducimus tempore tenetur nihil officiis mollitia, veritatis iure consequuntur fugit est earum, ex consequatur omnis?</p>
                         <div className="mygtukai">
-                            <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>BACK <i class="fas fa-arrow-left"></i></Button>
-                            <Button linkTo={props.location.state.linkutis} className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>MORE <i class="fas fa-info-circle"></i></Button>
+                            <Link to='/'>
+                                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>BACK <i class="fas fa-arrow-left"></i></Button>
+                            </Link>
+                            <Link to={{ pathname: props.location.state.linkutis }} target="_blank">
+                                <Button buttonStyle='btn--outline' buttonSize='btn--medium'>MORE <i class="fas fa-info-circle"></i></Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
