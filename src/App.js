@@ -7,7 +7,7 @@ import Home from './components/pages/Home'
 import Services from './components/pages/Services'
 import Products from './components/pages/Products'
 import Destinations from './components/pages/Destination'
-import SignUp from './components/pages/SignUp'
+import Subscribe from './components/pages/Subscribe'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route path='/services' component={Services} />
           <Route path='/products' component={Products} />
           <Route path='/destinations' component={Destinations} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path='/subscribe' component={Subscribe} />
         </Switch>
       </AnimatePresence>
     </>

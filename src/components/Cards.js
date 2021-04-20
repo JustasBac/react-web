@@ -10,8 +10,8 @@ import picture5 from '../images/img-8.jpg'
 
 function Cards() {
     return (
-        <div className="cards">
-            <h1>Check out these destinations!</h1>
+        <div className="cards" id="kortos">
+            <h1>Check out suggested destinations!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">

@@ -39,15 +39,15 @@
 .rodykle {
     position: relative;
     display: inline-block;
-    top: 10%;
+    top: 5%;
 }
 
 .rodykle span {
     display: block;
     width: 25px;
     height: 25px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
     transform: rotate(45deg);
     margin: -10px 0;
     animation: animate 2s infinite;
