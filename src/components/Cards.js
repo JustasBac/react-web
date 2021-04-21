@@ -18,7 +18,7 @@ function Cards() {
                         <CardItem src={picture1}
                             lokacija="Lithuania"
                             text="Discover the colours you never knew existed"
-                            label='Sightseeing & Nature' path='/services'
+                            label='Sightseeing & Nature'
                             price="500"
                             test="prior arrival"
                             isolation="7 days"

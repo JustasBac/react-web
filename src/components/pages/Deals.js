@@ -11,17 +11,16 @@ export default function Deals() {
         <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransitions} className="deze">
             <div className="deals">
                 <h1>SPECIAL DEALS</h1>
-                {/* <div className="cards"> */}
-                <ul className="cards__items">
+                <ul className="listas">
                     <CardItem
                         src={picture1}
                         lokacija="Lithuania"
                         text="Discover the colours you never knew existed"
-                        label='Sightseeing & Nature' path='/services'
+                        label='Sightseeing & Nature'
                         price="500"
                         test="prior arrival"
                         isolation="7 days"
-                        path='/destinations'
+                        // path='/destinations'
                         linkutis="https://reopen.europa.eu/en/map/LTU/5006"
                     />
                 </ul>
