@@ -5,13 +5,13 @@ import picture1 from '../images/img-9.jpg'
 import picture2 from '../images/img-2.jpg'
 import picture3 from '../images/img-3.jpg'
 import picture4 from '../images/img-4.jpg'
-import picture5 from '../images/img-8.jpg'
+import picture5 from '../images/img-5.jpg'
 
 
 function Cards() {
     return (
         <div className="cards" id="kortos">
-            <h1>Check out suggested destinations!</h1>
+            <h1>Check out our suggested destinations!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
@@ -22,7 +22,7 @@ function Cards() {
                             price="500"
                             test="prior arrival"
                             isolation="7 days"
-                            path="/destinations"
+                            path='/destinations'
                             linkutis="https://reopen.europa.eu/en/map/LTU/5006"
                         />
                         <CardItem src={picture2}
@@ -35,7 +35,8 @@ function Cards() {
                         />
                     </ul>
                     <ul className="cards__items">
-                        <CardItem src={picture3} lokacija="Sweden"
+                        <CardItem src={picture3}
+                            lokacija="Sweden"
                             text="Celebrate swedish Midsummer"
                             label='Sightseeing & Nature'
                             price="800"
@@ -43,8 +44,23 @@ function Cards() {
                             path="/destinations"
                             linkutis="https://reopen.europa.eu/en/map/SWE/5006"
                         />
-                        <CardItem src={picture4} text="Travel through the Islands of Bali in a Private Cruise" label='Luxury' path='/services' />
-                        <CardItem src={picture5} text="Travel through the Islands of Bali in a Private Cruise" label='Luxury' path='/services' />
+                        <CardItem src={picture4}
+                            lokacija="Czechia"
+                            text="Explore one of the most beautiful capitals of Europe!"
+                            label='City Tour'
+                            price="450"
+                            test="prior arrival"
+                            path='/destinations'
+                            linkutis="https://reopen.europa.eu/en/map/CZE/5006"
+                        />
+                        <CardItem src={picture5}
+                            lokacija="Greece"
+                            text="Discover a country with the most beautiful islands in Europe"
+                            label='Relax & Nature'
+                            price="500"
+                            path='/destinations'
+                            linkutis="https://reopen.europa.eu/en/map/GRC/5006"
+                        />
                     </ul>
                 </div>
             </div>

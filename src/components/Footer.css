@@ -1,5 +1,7 @@
 .footer-container {
-    background-color: #242424;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../images/img-footer.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 4rem 0 2rem 0;
     display: flex;
     flex-direction: column;
@@ -50,10 +52,6 @@
     justify-content: center;
 }
 
-.footer-link-wrapper {
-    display: flex;
-}
-
 .footer-link-items {
     display: flex;
     flex-direction: column;
@@ -77,7 +75,7 @@
 }
 
 .footer-link-items a:hover {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-email-form h2 {
@@ -91,6 +89,11 @@
 .social-icon-link {
     color: #fff;
     font-size: 24px;
+    transition: 0.3s ease-out;
+}
+
+.social-icon-link:hover {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .social-media {
@@ -115,15 +118,22 @@
 }
 
 .social-logo {
+    font-family: 'Dancing Script', cursive;
     color: #fff;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 700;
     font-size: 2rem;
     display: flex;
     align-self: center;
     margin-bottom: 16px;
+    transition: 0.3s ease-out;
+}
+
+.social-logo:hover {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .website-rights {
@@ -141,8 +151,10 @@
     .btn {
         width: 100%;
     }
-    .footer-link-wrapper {
-        flex-direction: column;
+    .footer-link-items {
+        align-items: center;
+        margin: 0px 0px;
+        text-align: center;
     }
     .social-media-wrap {
         flex-direction: column;

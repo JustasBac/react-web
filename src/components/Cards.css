@@ -142,3 +142,17 @@ h1 {
         margin-bottom: 2rem;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .cards__container {
+        /* border: solid red; */
+        width: 100%;
+    }
+    .cards__item {
+        /* border: solid green; */
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1em;
+        padding: 0;
+    }
+}

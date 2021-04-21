@@ -4,11 +4,10 @@ import { pageVariants, pageTransitions } from '../../App.js'
 import { Button } from '../Button'
 import './Destination.css'
 import euLogo from '../../images/re-open.jpg'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 
 
 export default function Destinations(props) {
-    console.log("sitas..:", props.location.state.linkutis)
     if (props.location.state) {
         return (
             <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransitions}>
@@ -31,10 +30,10 @@ export default function Destinations(props) {
                         <p className='lorem'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quis excepturi exercitationem eveniet sed deserunt ducimus tempore tenetur nihil officiis mollitia, veritatis iure consequuntur fugit est earum, ex consequatur omnis?</p>
                         <div className="mygtukai">
                             <Link to='/'>
-                                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>BACK <i class="fas fa-arrow-left"></i></Button>
+                                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>BACK <i className="fas fa-arrow-left"></i></Button>
                             </Link>
                             <Link to={{ pathname: props.location.state.linkutis }} target="_blank">
-                                <Button buttonStyle='btn--outline' buttonSize='btn--medium'>MORE <i class="fas fa-info-circle"></i></Button>
+                                <Button buttonStyle='btn--outline' buttonSize='btn--medium'>MORE <i className="fas fa-info-circle"></i></Button>
                             </Link>
                         </div>
                     </div>
@@ -43,10 +42,11 @@ export default function Destinations(props) {
         )
     } else {
         return (
-            <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransitions}>
-                <h1 className='products'>Destination</h1>
-                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>SUGGESTED</Button>
-            </motion.div >
+            <Redirect to="/" />
+            // <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransitions}>
+            //     <h1 className='products'>Destination</h1>
+            //     <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>SUGGESTED</Button>
+            // </motion.div >
         )
     }
 }

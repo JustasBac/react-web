@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer-container'>
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
-                    Join the Adventure newsletter to receive our best vacation deals
+                    Receive the latest information about the travelling restrictions in the EU
                 </p>
                 <p className="footer-subscription-text">
                     You can unsubscribe at any time
@@ -21,49 +21,37 @@ function Footer() {
                 </div>
             </section>
             <div className="footer-links">
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>About us</h2>
-                        <Link to='/sign-up'>How it works</Link>
-                        <Link to='/'>Testimonials</Link>
-                        <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Service</Link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>Contact us</h2>
-                        <Link to='/'>Contact</Link>
-                        <Link to='/'>Support</Link>
-                        <Link to='/'>Destinations</Link>
-                        <Link to='/'>Sponsorships</Link>
-                    </div>
+                <div className="footer-link-items">
+                    <h2>About us</h2>
+                    <Link to='/sign-up'>How it works</Link>
+                    <Link to='/'>Terms of Service</Link>
+                    <Link to='/'>Careers</Link>
+                    <Link to='/'>Investors</Link>
                 </div>
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>Videos</h2>
-                        <Link to='/'>Submit Video</Link>
-                        <Link to='/'>Ambassadors</Link>
-                        <Link to='/'>Agency</Link>
-                        <Link to='/'>Influencer</Link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>Social Media</h2>
-                        <Link to='/'>Facebook</Link>
-                        <Link to='/'>Instagram</Link>
-                        <Link to='/'>Youtube</Link>
-                        <Link to='/'>Twitter</Link>
-                    </div>
+                <div className="footer-link-items">
+                    <h2>Contact us</h2>
+                    <Link to='/'>Contact</Link>
+                    <Link to='/'>Support</Link>
+                    <Link to='/'>Destinations</Link>
+                    <Link to='/'>Sponsorships</Link>
+                </div>
+                <div className="footer-link-items">
+                    <h2>Social Media</h2>
+                    <Link to='/'>Facebook</Link>
+                    <Link to='/'>Instagram</Link>
+                    <Link to='/'>Youtube</Link>
+                    <Link to='/'>Twitter</Link>
                 </div>
             </div>
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
                         <Link to='/' className="social-logo">
-                            REISEN <i className="fas fa-plane-departure"></i>
+                            Reisen <i className="fas fa-plane-departure"></i>
                         </Link>
                     </div>
                     <small className="website-rights">
-                        REISEN &copy; 2021
+                        &copy; Created by Justas Bacinskas 2021
                     </small>
                     <div className="social-icons">
                         <Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">

@@ -31,6 +31,11 @@
     font-weight: 700;
     display: flex;
     align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.navbar-logo:hover {
+    color: rgba(255, 255, 255, 0.5)
 }
 
 .fa-plane-departure {
