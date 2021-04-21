@@ -15,7 +15,7 @@
 
 .hero-container>h1 {
     color: rgb(58, 113, 117);
-    /* color: #fff; */
+    font-family: 'Oswald', sans-serif;
     font-size: 100px;
     margin-top: -100px;
     text-shadow: rgba(0, 0, 0, 0.2) 1px 0 10px;

@@ -92,6 +92,7 @@ h1 {
 
 .cards__item__info {
     padding: 20px 30px 30px;
+    background-color: #fff;
 }
 
 .cards__item__lokacija {
