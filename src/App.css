@@ -131,6 +131,15 @@
         font-size: 9vw;
         margin-top: 2em;
     }
+    .inputas {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: .4em;
+    }
+    .inputas input {
+        margin-bottom: 1em;
+    }
 }
 
 @media only screen and (max-width: 508px) {
@@ -138,8 +147,5 @@
         min-width: 350px;
         padding: .1em .2em;
         font-size: .9em;
-    }
-    .inputas input {
-        width: 13em;
     }
 }

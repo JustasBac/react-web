@@ -23,7 +23,7 @@
 
 .page-destinations h1 {
   color: #fff;
-  font-size: 9em;
+  font-size: 8vw;
   text-shadow: rgba(0, 0, 0, 0.6) 1px 0 10px;
   position: absolute;
   top: 20%;
@@ -105,6 +105,10 @@
   }
   .page-destinations .page-lentele img {
     width: 20%;
+  }
+  .page-destinations img.bakraundas {
+    min-height: 110vh;
+    max-height: 110vh;
   }
 }
 /*# sourceMappingURL=Destination.css.map */

@@ -9,7 +9,7 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    max-width: 8em;
+    max-width: 9em;
 }
 
 .btn--primary {
@@ -41,10 +41,4 @@
     background: #fff;
     color: #242424;
     border-radius: 0.8em;
-}
-
-@media only screen and (max-width: 530px) {
-    .btn {
-        max-width: 6.5em;
-    }
 }
