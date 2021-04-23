@@ -49,7 +49,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-image: url('./images/img-2.jpeg');
+    background-image: url('https://res.cloudinary.com/dfx4mjv8p/image/upload/v1619156951/react-app/img-2_mmh9ks.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@
 
 @media only screen and (max-width: 630px) {
     .deze h1 {
-        font-size: 15vw;
+        font-size: 9vw;
         margin-top: 0;
     }
 }
