@@ -1,5 +1,5 @@
 .hero-container {
-    background: url('../images/img-home2.jpg') center center/cover no-repeat;
+    background: url('../images/img-home2.jpeg') center center/cover no-repeat;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../images/img-home2.jpg'); */
     background-size: cover;
     background-position: center;

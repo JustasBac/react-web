@@ -3,16 +3,18 @@ import { motion } from 'framer-motion'
 import { pageVariants, pageTransitions } from '../../App.js'
 import { Button } from '../Button'
 import './Destination.css'
-import euLogo from '../../images/re-open.jpg'
+import euLogo from '../../images/re-open.jpeg'
 import { Link, Redirect } from 'react-router-dom'
 
 
 export default function Destinations(props) {
+    console.log(props.location.state.src)
+    const naujasSrc = props.location.state.src.replace('/upload/c_scale,w_540', '/upload/c_scale,w_1894')
     if (props.location.state) {
         return (
             <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransitions}>
                 <div className="page-destinations">
-                    <img className='bakraundas' src={props.location.state.src} alt="" />
+                    <img className='bakraundas' src={naujasSrc} alt="" />
                     <h1>{props.location.state.lokacija}</h1>
                     <div className="page-lentele">
                         <img src={euLogo} alt="" />
@@ -29,7 +31,7 @@ export default function Destinations(props) {
                         </div>
                         <p className='lorem'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quis excepturi exercitationem eveniet sed deserunt ducimus tempore tenetur nihil officiis mollitia, veritatis iure consequuntur fugit est earum, ex consequatur omnis?</p>
                         <div className="mygtukai">
-                            <Link to='/'>
+                            <Link to={props.location.prevPath}>
                                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--medium'>BACK <i className="fas fa-arrow-left"></i></Button>
                             </Link>
                             <Link to={{ pathname: props.location.state.linkutis }} target="_blank">

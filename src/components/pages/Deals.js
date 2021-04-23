@@ -20,17 +20,11 @@ export default function Deals() {
                         price="500"
                         test="prior arrival"
                         isolation="7 days"
-                        // path='/destinations'
+                        path='/destinations'
                         linkutis="https://reopen.europa.eu/en/map/LTU/5006"
                     />
                 </ul>
 
-
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque sunt sapiente veritatis officiis error eos, vitae impedit reprehenderit, cupiditate repudiandae pariatur repellat numquam laboriosam quis voluptatem assumenda similique voluptatibus.
-                    Incidunt consequatur maiores, alias omnis voluptatem neque quae laboriosam mollitia consectetur blanditiis molestiae quisquam necessitatibus inventore eveniet, rerum accusamus quia tenetur soluta veniam et quos? Nesciunt consectetur facilis omnis adipisci.
-                    Ullam alias eligendi itaque reprehenderit dolorem, nobis repellat ducimus facere obcaecati magni non perspiciatis ab provident repellendus maiores laudantium expedita, ratione a est neque totam consequatur. Non rerum quidem sit?
-                    </p> */}
-                {/* </div> */}
             </div>
         </motion.div>
     )
