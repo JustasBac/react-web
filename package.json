@@ -18,7 +18,7 @@
     "homepage": "https://justasbac.github.io/react-web",
     "scripts": {
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build main --remote react",
+        "deploy": "gh-pages -d build --remote react",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
