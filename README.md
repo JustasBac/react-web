@@ -9,8 +9,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The website created by using React library. The main React features applied are React Hooks and React Router. Page transitions are made with Framer Motion. The website is fully responsive.
 
-<<<<<<< HEAD
 Deployed at https://eutravel.herokuapp.com
-=======
-Deployed at https://eutravel.herokuapp.com
->>>>>>> 2d1d0bb4fbd7b88433fae1a936c654581379e63d
