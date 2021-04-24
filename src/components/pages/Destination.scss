@@ -8,8 +8,7 @@
         object-fit: cover;
         display: flex;
         width: 100%;
-        min-height: 100vh;
-        max-height: 100vh;
+        height: 100vh;
     }
     h1 {
         color: #fff;
@@ -61,6 +60,14 @@
     }
 }
 
+@media only screen and (max-width: 1400px) {
+    .page-destinations {
+        img.bakraundas {
+            height: 115vh;
+        }
+    }
+}
+
 @media only screen and (max-width: 630px) {
     .page-destinations {
         h1 {
@@ -78,12 +85,6 @@
             img {
                 width: 20%;
             }
-        }
-    }
-    .page-destinations {
-        img.bakraundas {
-            min-height: 110vh;
-            max-height: 110vh;
         }
     }
 }
